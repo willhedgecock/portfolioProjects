@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Submission</title>
+    <link rel="stylesheet" type="text/css" href="css/recipeManager.css">
+
+    <link rel="stylesheet" type="text/css" href="css/recipeMediaQueries.css">
+
+    <style>
+        body {
+            background-image: url("images/background.jpg");
+        }
+
+        html {
+           height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="background"></div>
+
+    <div class="form-container">
+
+        <h1>Recipe Submission</h1>
+
+        <form method="post" action="" id="recipeSubmission">
+
+            <label for="first-name">First Name</label><span class="errorMessage" id="firstNameErr"></span>
+            <input type="text" id="first-name" name="first-name">
+
+            <label for="last-name">Last Name</label><span class="errorMessage" id="lastNameErr"></span>
+            <input type="text" id="last-name" name="last-name">
+
+            <label for="recipe-title">Recipe Title</label><span class="errorMessage" id="recipeTitleErr"></span>
+            <input type="text" id="recipe-title" name="recipe-title">
+
+            <label for="servings">Servings</label><span class="errorMessage" id="servingsErr"></span>
+            <select id="servings">
+                <option value="default">--Select Servings--</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+            </select>
+
+            <div class="prep-cook">
+
+                <label for="prep-time-number">Prep Time</label><span class="errorMessage" id="prepTimeErr"></span>
+                <input type="number" id="prep-time" name="prep-time"><span id="prepTimeErr"></span>
+
+                <label for="prep-time-measure">Hours/Minutes</label><span class="errorMessage" id="prepTimeMsrErr"></span>
+                <select id="prep-time-measure">
+                    <option value="default">--Select Hours/Minutes--</option>
+                    <option value="Hours">Hours</option>
+                    <option value="Minutes">Minutes</option>                    
+                </select>
+
+            </div>
+
+            <div class="prep-cook">
+
+                <label for="cook-time">Cook Time</label><span class="errorMessage" id="cookTimeErr"></span>
+                <input type="number" id="cook-time" name="cook-time">
+
+                <label for="cook-time-measure">Hours/Minutes</label><span class="errorMessage" id="cookTimeMsrErr"></span>
+                <select id="cook-time-measure">
+                    <option value="default">--Select Hours/Minutes--</option>
+                    <option value="Hours">Hours</option>
+                    <option value="Minutes">Minutes</option>
+                </select>
+
+                <p><span class="bold">Note:</span> If either/or involves half hour(s), please use 2.5 to represent two and a half hours, etc. Thanks!</p>
+            
+            </div>
+
+
+
+            <label for="recipe-img" style="display: block; margin-top: 20px;">Recipe Image</label>
+            <input type="file" id="recipe-img" name="recipe-image">
+
+            <h2 style="border-bottom: 2px dotted black;">Ingredients</h2>
+
+            <div class="ingredients">
+
+                <div class="ingredientSection">
+
+                    <label for="ingredient1">Ingredient</label><span class="errorMessage" id="ingredientErr"></span>
+                    <input type="text" id="ingredient1" name="ingredient1">
+
+                    <label for="UOMQuantity1">Unit of measurement quantity</label><span class="errorMessage" id="measureQuanErr"></span>
+                    <input type="number" id="UOMQuantity1" name="UOMQuantity1" placeholder="0.25, 0.5, 0.75, 1, 2...">
+
+                    <label for="ingredientUOM1">Ingredient unit of measurement</label><span class="errorMessage" id="ingredientUOMErr"></span>
+                    <select id="ingredientUOM1">
+                        <option value="default">--Select UOM--</option>
+                        <option value="pinch">Pinch</option>
+                        <option value="tsp">Teaspoon</option>
+                        <option value="tbsp">Tablespoon</option>
+                        <option value="fluid-oz">Fluid Ounces</option>
+                        <option value="cup">Cup</option>
+                        <option value="can">Can(s)</option>
+                        <option value="pint">Pint</option>
+                        <option value="gallon">Gallon</option>
+                        <option value=" ">" "(eggs or bread)</option>
+                    </select>
+
+                </div>
+
+
+
+            </div>
+
+                <p>
+                    <button id="addIngredient" type="button">Add another ingredient</button>
+                </p>
+
+
+
+
+            <h2 style="border-top: 2px dotted black;">Instructions</h2>
+
+            <div class="instructions">                
+
+                <div class="instructionSection">
+
+                    <label for="instruction1">Instruction</label><span class="errorMessage" id="instructionErr"></span>
+
+                    <input type="text" id="instruction1" name="instruction1" placeholder="First instruction">
+                </div>
+
+            </div>
+
+            <p>
+                <button id="addInstruction" type="button">Add another instruction</button>
+            </p>
+
+            <input type="button" value="Submit Recipe" onclick="processForm()">
+            <input type="reset" value="Reset Form">
+
+        </form>
+
+    </div>  <!--END OF FORM CONTAINER-->
+
+    <div class="seeRecipe">
+        <a href="index.html"><button type="button">Return to Homepage to see your recipe</button></a>
+    </div>
+
+    <script src="js/form.js"></script>
+
+    <script>
+        document.querySelector("#addIngredient").addEventListener("click", createRecipeInputField);
+    </script>
+    
+</body>
+
+</html>

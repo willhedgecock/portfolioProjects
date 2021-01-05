@@ -1,0 +1,356 @@
+$main-yellow: #FFF888;
+
+* {
+    box-sizing: border-box;
+}
+
+.errorMessage  {
+    color: red;
+}
+
+html {
+    height: 100%;
+}
+
+h1,h3 {
+    font-family: 'Carter One';
+}
+
+.required {
+    color: red;
+    text-align: center;
+}
+
+body {
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1.5;
+    overflow-x: hidden;
+    height: 100%;
+}
+
+button {
+    text-transform: uppercase;
+    font-family: 'Antic Slab', serif;
+    font-weight: bold;
+}
+
+.bodyHeader {
+    text-align: center;
+
+    button {
+        padding: 5px;
+        margin: 5px auto;
+        background-color: $main-yellow;
+        color: black;
+        border-radius: 5px;
+    }
+}
+
+.v-header {
+    display: flex;
+    align-items: center;
+    color: white;
+    height: 70vh;
+    justify-content: center;
+}
+
+.container {
+    text-align: center;
+    max-width: 960px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin: auto;
+}
+
+.video-wrap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 75vh;
+    overflow: hidden;
+    border-bottom-left-radius: 50% 25%;
+    border-bottom-right-radius: 50% 25%;
+}
+
+.container video {
+    min-height: 100%;
+    min-width: 100%;
+    opacity: 1;
+}
+
+.header-overlay {
+    height: 75vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: black;
+    z-index: 1;
+    opacity: 0.7;
+    border-bottom-left-radius: 50% 25%;
+    border-bottom-right-radius: 50% 25%;
+}
+
+.header-content {
+    font-size: 1.25rem;
+    z-index: 2;
+    font-family: "Staatliches";
+    letter-spacing: 3px;
+}
+
+.main-content {
+      margin: 70px auto;
+      text-align: center;
+  }
+
+//ACCORDION STYLING
+
+.accordion {
+    max-width: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    overflow: hidden;
+    background: #FFF888;
+    margin: auto;
+    box-shadow: 1px 0px 10px 5px rgba(0,0,0,0.75);
+}
+
+.accordion_label, .accordion_content {
+    padding: 14px 20px;
+}
+
+.accordion_label {
+    display: block;
+    color: black;
+    font-size: 1.5em;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+    transition: background 0.8s;
+    font-family: 'Carter One';
+}
+
+.accordion_label:hover {
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.accordion_label::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 20px;
+    width: 12px;
+    height: 6px;
+    background-image: url('data:image/svg+xml;utf8,<svg width="100" height="50" xmlns="http://www.w3.org/2000/svg"><polygon points="0,0 100,0 50,50" style="fill:%23000000099;" /></svg>');
+    background-size: contain; 
+    transition: transform 0.4s
+}
+
+.accordion_content {
+    background: #fafafa;
+    line-height: 1.6;
+    font-size: 0.85em;
+    display: none;
+    text-align: center;
+
+        img {
+            max-width: 50%;
+            max-height: 500px;
+        }
+
+        p {
+            font-size: 1.25em;
+            max-width: 75%;
+            margin: auto auto 15px auto;
+            font-family: 'Antic Slab', serif;
+        }
+}
+
+.recipeInformation {
+    font-weight: bold;
+}
+
+
+#chiliIngredientDisplay, #eggrollIngredientDisplay, #pieIngredientDisplay {
+    font-size: 1em;
+}
+
+#chiliInstructionDisplay, #eggrollInstructionDisplay, #pieInstructionDisplay, #userInstructionDisplay {
+    font-size: 1.2em;
+}
+
+#userInstructionDisplay {
+    padding-left: 0;
+}
+
+.hide-or-display {
+    font-size: 1.25em;
+}
+
+#recipe-size, #eggroll-recipe-size, #pie-recipe-size {
+    display: none;
+
+    label {
+        font-size: 1.25em;
+        font-weight: bold;
+    }
+}
+
+.accordion div button {
+    font-size: 1.1em;
+    min-width: 150px;
+    min-height: 40px;
+    background-color: $main-yellow;
+    border: 2px solid black;
+}
+
+.accordion div button:hover {
+    background-color: #C7CA8D;
+    cursor: pointer;
+}
+
+.accordion_input {
+    display: none;
+}
+
+.accordion_input:checked ~ .accordion_content {
+    display: block;
+}
+
+.accordion_input:checked ~ .accordion_label:after {
+    transform: translateY(-50%) rotate(0.5turn);
+}
+
+.instructionsButtons, .eggrollInstructionsButtons, .pieInstructionsButtons {
+    margin-top: 20px;
+    display: none;
+}
+
+//END ACCORDION STYLING
+
+//FORM STYLING
+
+.form-container {
+    margin: 30px auto 20px auto;
+    max-width: 60%;
+    border: 2px solid black;
+    padding: 20px;
+    background-color:#F7F7F7;
+
+    h1 {
+        text-align: center;
+    }
+
+    input {
+        display: block;
+        margin: 10px 5px 10px 0px;
+        height: 2em;
+        width: 100%;
+        font-size: 1.1em;
+    }
+
+    label {
+        font-size: 1.25em;
+        font-weight: bold;
+    }
+}
+
+.ingredients {
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    label {
+        font-size: 1em;
+        font-weight: bold;
+    }
+
+    input {
+        height: 1.2em;
+        max-width: 75%;
+        font-size: 1.1em;
+    }
+}
+
+.ingredientSection {
+    margin: 10px;
+    border: 1px dotted black;
+    padding: 15px;
+    width: 35%;
+    background-color: $main-yellow;
+
+    select {
+        display: block;
+    }
+}
+
+.instructions {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .instructionSection {
+        margin: 5px;
+        width: 35%;
+
+        input {
+            min-width: 100%;
+        }
+    }
+}
+
+.prep-cook {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-top: 20px;
+    align-items: center;
+
+    input {
+        width: 50%;
+        margin-right: 20px;        
+    }
+
+    label {
+        margin-right: 10px;
+    }
+
+    select {
+        font-size: .9em;
+    }
+
+    p {
+        margin: -5px 0 15px 0;
+    }
+
+    .bold {
+        font-weight: bolder;
+    }
+}
+
+.seeRecipe {
+    height: 60px;
+    width: 400px;
+    background-color:$main-yellow;
+    border: 1px solid black;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px auto;
+
+    button {
+        cursor: pointer;
+    }
+}
+
+//END OF FORM STYLING
+
+

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Manager</title>
+    <meta name="description" content="Recipe manager, finding delicious recipes you can make at home">
+    <meta name="keywords" content="recipes, cooking, meals, at home">
+
+    <script src="js/form.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="css/recipeManager.css">
+    <link rel="stylesheet" type="text/css" href="css/recipeMediaQueries.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Carter+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Antic+Slab&family=Carter+One&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <header class="v-header container">
+
+        <div class="video-wrap">
+            <video src="videos/homepage-fajitas.mp4" autoplay loop muted type="video/mp4"></video>
+        </div>
+
+        <div class="header-overlay"></div>
+
+        <div class="header-content">
+            <h1 style="font-family: 'Staatliches'">Will's Recipe Manager</h1>
+            <h2 style="font-family: 'Staatliches'">WDV321 Advanced Javascript</h2>
+            <h3 style="font-family: 'Staatliches'">ACADEMIC PROJECT</h3>
+        </div>
+
+    </header>
+
+    <h1 style="margin: 90px auto 20px auto; text-align: center;">View My Recipes</h1>
+
+    <div class="accordion">
+
+        <div>
+            <input type="checkbox" name="ingredients" id="chili" class="accordion_input">
+            <label for="chili" class="accordion_label">Crockpot Chili</label>
+            <div class="accordion_content">
+                <h1>Crockpot Chili</h1>
+                <img src="images/crockpot-chili.jpeg" alt="Crockpot Chili">
+                <p class="description">Come home to the best homemade chili! It’s an amazingly hearty, cozy beef chili that cooks low and
+                    slow for 6 hours in the crockpot!</p>
+
+                <p class="recipeInformation">Servings: <span id="chiliServings"></span></p>
+                <p class="recipeInformation">Prep Time: <span id="chiliPrepTime"></span></p>
+                <p class="recipeInformation">Cook Time: <span id="chiliCookTime"></span></p>
+                <p class="recipeInformation">Difficulty: <span id="chiliDifficulty"></span></p>
+
+                <button id="getChili" type="button">Get Ingredients</button>
+
+                <button id="hideChili" type="button">Hide Ingredients</button>
+
+                <p id="chiliIngredientDisplay"></p>
+
+                <div id="recipe-size">
+
+                    <label for="half-recipe">Cut recipe in half</label>
+                    <input type="radio" id="half-recipe" name="recipe-size">
+
+                    <label for="default-recipe">Default Recipe Size</label>
+                    <input type="radio" id="default-recipe" name="recipe-size">
+
+                    <label for="half-recipe">Double the recipe</label>
+                    <input type="radio" id="double-recipe" name="recipe-size">
+
+                </div>
+
+                <div class="instructionsButtons">
+                    <button id="getChiliInstructions" type="button">Get Instructions</button>
+                    <button id="hideChiliInstructions" type="button">Hide Instructions</button>
+                </div>
+
+                <ol id="chiliInstructionDisplay">
+
+                </ol>
+
+            </div>
+        </div>
+
+        <div>
+            <input type="checkbox" name="ingredients" id="eggrolls" class="accordion_input">
+            <label for="eggrolls" class="accordion_label">Southwestern Eggrolls</label>
+            <div class="accordion_content">
+                <h1>Southwestern Eggrolls</h1>
+                <img src="images/eggrolls.jpg" alt="Southwestern Style Eggrolls">
+                <p class="description">These aren't traditional egg rolls! Small flour tortillas are stuffed with an exciting blend of
+                    Southwestern-style ingredients, then deep fried until golden brown.
+                </p>
+                <p class="recipeInformation">Servings: <span id="eggrollServings"></span></p>
+                <p class="recipeInformation">Prep Time: <span id="eggrollPrepTime"></span></p>
+                <p class="recipeInformation">Cook Time: <span id="eggrollCookTime"></span></p>
+                <p class="recipeInformation">Difficulty: <span id="eggrollDifficulty"></span></p>
+
+                <button id="getEggroll" type="button">Get Ingredients</button>
+
+                <button id="hideEggroll" type="button">Hide Ingredients</button>
+
+                <p id="eggrollIngredientDisplay"></p>
+
+                <div id="eggroll-recipe-size">
+
+                    <label for="half-recipe">Cut recipe in half</label>
+                    <input type="radio" id="eggroll-half-recipe" name="recipe-size">
+
+                    <label for="default-recipe">Default Recipe Size</label>
+                    <input type="radio" id="eggroll-default-recipe" name="recipe-size">
+
+                    <label for="eggroll-double-recipe">Double the recipe</label>
+                    <input type="radio" id="eggroll-double-recipe" name="recipe-size">
+
+                </div>
+
+                <div class="eggrollInstructionsButtons">
+                    <button id="getEggrollInstructions" type="button">Get Instructions</button>
+                    <button id="hideEggrollInstructions" type="button">Hide Instructions</button>
+                </div>
+
+                <ol id="eggrollInstructionDisplay">
+
+                </ol>
+
+            </div>
+        </div>
+
+        <div>
+            <input type="checkbox" name="ingredients" id="pbPie" class="accordion_input">
+            <label for="pbPie" class="accordion_label">Peanut Butter Pie</label>
+            <div class="accordion_content">
+                <h1>Peanut Butter Pie</h1>
+                <img src="images/pb-pie.jpg" alt="Peanut Butter Pie">
+                <p class="description">Peanut butter refrigerator pie, inexpensive, and very simple to make with minimal ingredients. Delicious for any occasion.</p>
+
+                <p class="recipeInformation">Servings: <span id="pieServings"></span></p>
+                <p class="recipeInformation">Prep Time: <span id="piePrepTime"></span></p>
+                <p class="recipeInformation">Cook Time: <span id="pieCookTime"></span></p>
+                <p class="recipeInformation">Cool Off Time: <span id="pieCoolOffTime"></span></p>
+                <p class="recipeInformation">Difficulty: <span id="pieDifficulty"></span></p>
+
+                <button id="getPie" type="button">Get Ingredients</button>
+
+                <button id="hidePie" type="button">Hide Ingredients</button>
+
+                <p id="pieIngredientDisplay"></p>
+
+                <div id="pie-recipe-size">
+
+                    <label for="pie-half-recipe">Cut recipe in half</label>
+                    <input type="radio" id="pie-half-recipe" name="recipe-size">
+
+                    <label for="pie-default-recipe">Default recipe size</label>
+                    <input type="radio" id="pie-default-recipe" name="recipe-size">
+
+                    <label for="pie-double-recipe">Double the recipe</label>
+                    <input type="radio" id="pie-double-recipe" name="recipe-size">
+
+                </div>
+
+                <div class="pieInstructionsButtons">
+                    <button id="getPieInstructions" type="button">Get Instructions</button>
+                    <button id="hidePieInstructions" type="button">Hide Instructions</button>
+                </div>
+
+                <ol id="pieInstructionDisplay">
+
+                </ol>
+
+            </div>
+        </div>
+
+    </div>
+
+    <div class="bodyHeader">
+
+        <h1>Do you have a recipe you'd like to see featured on the site?</h1>
+        <h3>Click <a href="submissionform.html">here</a> to go to our recipe submission page!</h3>
+        <h3>- OR -</h3>
+        <h1>Did you just submit a recipe?</h1>
+        <h3>Click the button to add it to the recipe list!</h3>
+        
+        <button type="button" id="displayNewRecipe" onclick="createUserRecipe(); this.onclick=null;">See your recipe</button>
+
+    </div>
+
+
+    <script src="js/recipe.js"></script>
+    <script src="js/newRecipe.js"></script>
+
+    <script>
+        displayChiliInfo();
+    </script>
+</body>
+
+</html>
