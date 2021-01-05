@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Will Hedgecock</title>
+
+    <!--STYLESHEET-->
+    <link rel="stylesheet" href="css/portfolio.css">
+    <link rel="stylesheet" href="css/portfolioDisplay.css">
+    <link rel="stylesheet" href="css/mediaQueries.css">
+
+    <!--FONT AWESOME CDN-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+        crossorigin="anonymous" />
+
+    <!--FONTS-->
+    <link href="https://fonts.googleapis.com/css2?family=Trade+Winds&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@100&display=swap" rel="stylesheet">
+
+    <!--AOS STYLESHEET-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="brand-name">
+            <p><a href="#">Will Hedgecock</a></p>
+        </div>
+        <a href="javascript:void(0)" class="toggle-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+        <div class="navbar-links">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="contact.php">Contact Me</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="background-video">
+        <video src="videos/background-video.mp4" autoplay muted loop></video>
+    </div>
+
+    <div class="video-text">
+        <h1>Hi, my name is Will Hedgecock</h1>
+        <h2>I'm a Web Development Student</h2>
+        <h2>Based in Des Moines, IA</h2>
+        <a href="https://github.com/willhedgecock" target="_blank"><i class="fab fa-github"></i></i></a>
+        <a href="https://www.linkedin.com/in/will-hedgecock-90a2421b4/" target="_blank"><i
+                class="fab fa-linkedin"></i></a>
+
+        <p>
+            <a href="#portfolio"><button class="cta-btn">View my work</button></a>
+        </p>
+    </div>
+
+    <div id="about">
+        <h1 data-aos="fade-up">About Me</h1>
+
+        <div class="about-flex">
+
+            <div class="about-left" data-aos="fade-up">
+
+                <p>Hello! The name's Will. I'm a 25-year-old web development student looking to graduate in May of 2021.
+                    I had only ever known retail until finding a love for web development. My favorite parts of web
+                    development are the challenges and seeing an idea turn into a fully functioning application. I
+                    possess excellent communication skills and a strong work ethic. When I'm not working or coding, I
+                    enjoy spending time with my girlfriend, Kelsey, and of course, our dog and cat, Lady and Meredith.
+                    You'll also find me playing guitar or video games.
+                </p>
+
+            </div>
+
+            <div class="about-right" data-aos="fade-up">
+
+                <img src="images/profilePic.jpg" alt="Profile picture of Will Hedgecock">
+
+            </div>
+
+        </div>
+
+        <div class="resume-skills">
+
+            <div class="resume" data-aos="fade-up">
+
+                <h1>My Resume</h1>
+                <h3>Click on resume to enlarge or download</h3>
+
+                <a href="files/willHedgecockResume.pdf" target="_blank"><img src="images/resume.jpg"
+                        alt="Will's resume"></a>
+            </div>
+
+            <div class="skills" data-aos="fade-up">
+
+                <h1>Skills</h1>
+
+                <div class="icon-display">
+
+                    <i class="fab fa-html5"></i>
+                    <i class="fab fa-css3-alt"></i>
+                    <i class="fab fa-sass"></i>
+                    <i class="fab fa-js"></i>
+                    <i class="fab fa-php"></i>
+                    <img src="images/mysql.png" alt="My SQL icon">
+                    <i class="fab fa-git"></i>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+    </div>
+    <!--END ABOUT ME-->
+
+    <div id="portfolio" data-aos="fade-up">
+
+        <h1>My Portfolio</h1>
+
+        <div class="grid-portfolio">
+
+            <div class="grid-project project1">
+                <img src="images/recipe-project.jpg" alt="Thumbnail for JS recipe project">
+                <div class="pic-overlay">
+                    <h1 class="project-title">Javascript Recipe Manager</h1>
+                    <p class="project-desc">Application that allows a user to modify recipe size dynamically, add a new
+                        recipe and see the new recipe loaded onto the home page</p>
+                    <p class="skills-used">Skills used: HTML, CSS, Javascript, Local storage</p>
+                    <button type="button">See the site</button>
+                    <button type="button">See the code</button>
+                </div>
+            </div>
+
+            <div class="grid-project project2">
+                <img src="images/advertisement-project.jpg" alt="Thumbnail CSS animation advertisement">
+                <div class="pic-overlay">
+                    <h1 class="project-title">CSS Animation Advertisement</h1>
+                    <p class="project-desc">Sample advertisement created for Iowa Hawkeye football tickets on the
+                        University of Iowa homepage</p>
+                    <p class="skills-used">Skills used: HTML, CSS, CSS Animation</p>
+                    <button type="button">See the site</button>
+                    <button type="button">See the code</button>
+                </div>
+            </div>
+
+            <div class="grid-project project3">
+                <img src="images/music-shop-project.jpg" alt="Thumbnail for PHP music store project">
+                <div class="pic-overlay">
+                    <h1 class="project-title">PHP Content Management Website</h1>
+                    <p class="project-desc">Fictional music store application that uses SQL PDO statements to pull,
+                        display, add/delete, and edit items in a database.
+                        This project features a login system which validates data against the database and demonstrates
+                        PHP sessions to verify a user has logged in. It also
+                        features Paypal as the payment processor
+                    </p>
+                    <p class="skills-used">Skills used: HTML, CSS, Javascript, PHP, SQL, self-posting forms, form
+                        validation, Paypal Sandbox, YouTube video embedding</p>
+                    <a href="http://willyhedge.com/WDV341/portfolioProject/index.php" target="_blank"><button
+                            type="button">See the site</button></a>
+                    <a href="https://github.com/willhedgecock/wdv341/tree/master/portfolioProject"
+                        target="_blank"><button type="button">See the code</button></a>
+                </div>
+            </div>
+
+            <div class="grid-project project4">
+                <img src="images/skyline-project.jpg" alt="Thumbnail for Skyline Fitness Gym">
+                <div class="pic-overlay">
+                    <h1 class="project-title">Skyline Fitness Website</h1>
+                    <p class="project-desc">Fictional gym website that uses Bootstrap as the layout tool</p>
+                    <p class="skills-used">Skills used: HTML, CSS, Bootstrap, CSS Animation</p>
+                    <button type="button">See the site</button>
+                    <button type="button">See the code</button>
+                </div>
+            </div>
+
+            <div class="grid-project project5">
+                <img src="images/react-project.jpg" alt="Thumbnail for React movie application">
+                <div class="pic-overlay">
+                    <h1 class="project-title">React Movie Application</h1>
+                    <p class="project-desc">Basic React app that lets a user click on a movie thumbnail and displays the
+                        selected movie information below</p>
+                    <p class="skills-used">Skills used: React (props, components), CSS, useState</p>
+                    <a href="https://willhedgecock.github.io/new-2020/" target="_blank"><button type="button">See the
+                            site</button></a>
+                    <a href="https://github.com/willhedgecock/new-2020" target="_blank"><button type="button">See the
+                            code</button></a>
+                </div>
+            </div>
+
+            <div class="grid-project project6">
+                <img src="images/TDD-project.jpg" alt="Thumbnail for TDD assignment">
+                <div class="pic-overlay">
+                    <h1 class="project-title">Test Driven Development -- Phone Number Validation</h1>
+                    <p class="project-desc">TDD tests run using Mocha and Chai to verify inputted phone numbers</p>
+                    <p class="skills-used">Skills used: Mocha & Chai, command prompt</p>
+                    <a href="https://github.com/willhedgecock/wdv321/tree/master/mochavalidatephonenum"
+                        target="_blank"><button type="button">See the code</button></a>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <footer id="footer">
+
+        <div class="my-info">
+            <p>Will Hedgecock</p>
+            <p>whedgecock@dmacc.edu</p>
+            <a href="https://github.com/willhedgecock" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/will-hedgecock-90a2421b4/" target="_blank"><i
+                    class="fab fa-linkedin"></i></a>
+        </div>
+
+        <div class="copyright">
+            <p>Copyright &#169;
+
+                <script>
+                    let date = new Date();
+                    document.write(date.getFullYear());
+                </script>
+
+                All Rights Reserved
+            </p>
+        </div>
+
+    </footer>
+
+
+    <script src="js/portfolio.js"></script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <script>
+        AOS.init({
+            offset: 120,
+            duration: 1000
+        });
+    </script>
+
+</body>
+
+</html>
