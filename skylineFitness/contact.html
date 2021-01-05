@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+
+    <head>
+        <title>Contact Us</title>
+        <meta charset="utf-8">
+        <meta name="description" content="Contact Form for Skyline Fitness">
+        <meta name="keywords" content="contact, contact us, skyline fitness">
+        <meta name="author" content="Will Hedgecock">
+        <meta name="viewport" content="width=device-width, inital-scale=1.0">
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+        <link rel="stylesheet" type="text/css" href="scss/skyline.css">
+        <link rel="stylesheet" type="text/scss" href="scss/skyline.scss">
+        <link rel="stylesheet" type="text/css" href="scss/skyline2.css">
+        <link rel="stylesheet" type="text/scss" href="scss/skyline2.scss">
+
+        <!--GOOGLE FONT: ALFA SLAB ONE-->
+        <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+
+        <!--SOCIAL MEDIA ICONS LINK-->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
+
+        <style>
+
+          @media only screen and (max-width: 400px) {
+            #contact-container {
+              width: 100%;
+            }
+          }
+
+            .required {
+                color: red;
+            }
+
+            h1 {
+                text-align: center;
+                margin: 40px;
+                font-family: 'Broadway';
+            }
+
+            #contact-container {
+                width: 80%;
+                margin: auto;
+            }
+
+            .form-control {
+                border-radius: 10px;
+            }
+
+            .above-message {
+                margin: 20px 10px 25px 15px;
+            }
+
+            .btn {
+                background-color: #F19c33;
+                color: black;
+                margin-top: 15px;
+                font-weight: bold;
+                border: 1px solid black;
+                margin-right: 10px;
+            }
+
+            .btn:hover {
+                background-color: #162C40;
+                color: #f3f3f3;
+            }
+        </style>
+
+
+    </head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="index.html"><img src="images/45plate.png" class="45-plate">Skyline Fitness</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ml-auto">
+                <a class="nav-item nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link" href="about.html">About Us</a>
+                <a class="nav-item nav-link" href="programs.html">Programs</a>
+                <a class="nav-item nav-link" href="blog.html">Blog</a>
+                <a class="nav-item nav-link active" href="contact.html">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="background">
+
+    <div id="contact-container">
+
+        <h1>What's on your Mind?</h1>
+
+
+    <form id="contact-form" method="post" action="contact.php" role="form">
+
+        <div class="messages"></div>
+
+        <div class="controls">
+
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-6">
+                    <div class="form-group">
+                        <label for="form_name">First Name <span class="required">*</span></label>
+                        <input id="form_name" type="text" name="name" class="form-control" required="required" data-error="Firstname is required.">
+                        <div class="help-block with-errors"></div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-6">
+                    <div class="form-group">
+                        <label for="form_lastname">Last Name <span class="required">*</span></label>
+                        <input id="form_lastname" type="text" name="surname" class="form-control" required="required" data-error="Lastname is required.">
+                        <div class="help-block with-errors"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-6">
+                    <div class="form-group">
+                        <label for="form_email">Email <span class="required">*</span></label>
+                        <input id="form_email" type="email" name="email" class="form-control" placeholder="yourname@email.com" required="required" data-error="Valid email is required.">
+                        <div class="help-block with-errors"></div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-6">
+                    <div class="form-group">
+                        <label for="form_phone">Phone</label>
+                        <input id="form_phone" type="tel" name="phone" class="form-control" placeholder="515-515-5151">
+                        <div class="help-block with-errors"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="above-message"> 
+                <h4>Questions, comments, concerns?</h4>
+                <p>Leave us a message and we will get back with you within 24 hours. Thanks!</p>
+            </div>
+
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12">
+                    <div class="form-group">
+                        <label for="form_message">Message <span class="required">*</span></label>
+                        <textarea id="form_message" name="message" class="form-control" placeholder="Type your message here" rows="6" required="required" data-error="Please, leave us a message."></textarea>
+                        <div class="help-block with-errors"></div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-12">
+                    <input type="submit" class="btn btn-success btn-send" value="Send message">
+                    <input type="reset" class="btn btn-primary" value="Reset">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12">
+                    <p style="margin: 20px auto 20px auto;" class="text-muted"><span style="color: red;">*</span> Required Fields</p>
+                </div>
+            </div>
+        </div>
+
+    </form>
+
+    
+
+    </div> <!--CLOSE CONTAINER-->
+
+    <footer class="page-footer font-small mdb-color lighten-3 pt-4">
+
+        <!-- Footer Links -->
+        <div class="container text-center text-md-left">
+      
+          <!-- Grid row -->
+          <div class="row">
+      
+            <hr class="clearfix w-100 d-md-none">
+      
+            <!-- Grid column -->
+            <div class="col-md-2 col-lg-2 mx-auto my-md-4 my-0 mt-4 mb-1">
+      
+              <!-- Links -->
+              <h5 class="font-weight-bold text-uppercase mb-4">Navigation</h5>
+      
+              <ul class="list-unstyled">
+                <li>
+                  <p>
+                    <a href="index.html">HOME</a>
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <a href="about.html">ABOUT US</a>
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <a href="programs.html">PROGRAMS</a>
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <a href="blog.html">BLOG</a>
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <a href="contact.html">CONTACT</a>
+                  </p>
+                </li>
+              </ul>
+      
+            </div>
+            <!-- Grid column -->
+      
+            <hr class="clearfix w-100 d-md-none">
+      
+            <!-- Grid column -->
+            <div class="col-md-4 col-lg-3 mx-auto my-md-4 my-0 mt-4 mb-1">
+      
+              <!-- Contact details -->
+              <h5 class="font-weight-bold text-uppercase mb-4">Contact</h5>
+      
+              <ul class="list-unstyled">
+                <li>
+                  <p>
+                    <i class="fas fa-home mr-3"></i>242 W 41st St, New York, NY 10036</p>
+                </li>
+                <li>
+                  <p>
+                    <i class="fas fa-envelope mr-3"></i>skylinefit@mail.com</p>
+                </li>
+                <li>
+                  <p>
+                    <i class="fas fa-phone mr-3"></i>212-123-4567</p>
+                </li>
+              </ul>
+      
+            </div>
+            <!-- Grid column -->
+      
+            <hr class="clearfix w-100 d-md-none">
+      
+            <!-- Grid column -->
+            <div style="font-size: 2.5em;" class="col-md-2 col-lg-2 text-center mx-auto my-4">
+      
+              <!-- Social buttons -->
+              <h5 class="font-weight-bold text-uppercase mb-4">Follow Us</h5>
+      
+              <!-- Facebook -->
+              <a type="button" class="btn-floating btn-fb">
+                <i style="margin-right: 10px;" class="fab fa-facebook-f"></i>
+              </a>
+              <!-- Twitter -->
+              <a type="button" class="btn-floating btn-tw">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <!-- Google +-->
+              <a type="button" class="btn-floating btn-gplus">
+                <i class="fab fa-google-plus-g"></i>
+              </a>
+      
+            </div>
+            <!-- Grid column -->
+      
+          </div>
+          <!-- Grid row -->
+      
+        </div>
+        <!-- Footer Links -->
+      </footer>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+
+</body>

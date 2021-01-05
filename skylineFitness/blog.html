@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Skyline Blog</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A new sky-high gym in Manhattan, NYC">
+    <meta name="keywords" content="NYC, fitness, gym">
+    <meta name="author" content="Will Hedgecock">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="scss/skyline.css">
+    <link rel="stylesheet" type="text/scss" href="scss/skyline.scss">
+    <link rel="stylesheet" type="text/css" href="scss/skyline2.css">
+    <link rel="stylesheet" type="text/scss" href="scss/skyline2.scss">
+
+    <!--SOCIAL MEDIA ICONS LINK-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
+
+    <!--GOOGLE FONT: ALFA SLAB ONE-->
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+
+    <style>
+        @media only screen and (max-width: 400px) {
+            .blog-first-row .h2-position1 {
+                font-size: 24px;
+                left: 0px;
+            }
+            .blog-first-row .h2-position2 {
+                font-size: 24px;
+                left: 0px;
+            }
+
+            .blog-second-row .h2-position3 {
+                font-size: 24px;
+                left: 0px;
+            }
+
+            .blog-second-row .h2-position4 {
+                font-size: 24px;
+                left: 0px;
+            }
+
+            .pagination-container h3 {
+                font-size: 24px;
+            }
+        }
+
+        @media only screen and (min-width: 401px) and (max-width: 800px) {
+
+            h1 {
+                font-size: 30px;
+            }
+
+            .blog-first-row .h2-position1 {
+                font-size: 26px;
+                left: 0px;
+            }
+            .blog-first-row .h2-position2 {
+                font-size: 26px;
+                left: 0px;
+            }
+
+            .blog-second-row .h2-position3 {
+                font-size: 26px;
+                left: 0px;
+            }
+
+            .blog-second-row .h2-position4 {
+                font-size: 26px;
+                left: 5%;
+            }
+
+            .pagination-container h3 {
+                font-size: 26px;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="main-container">
+
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="index.html"><img src="images/45plate.png" class="45-plate">Skyline Fitness</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ml-auto">
+                    <a class="nav-item nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-item nav-link" href="about.html">About Us</a>
+                    <a class="nav-item nav-link" href="programs.html">Programs</a>
+                    <a class="nav-item nav-link active" href="blog.html">Blog</a>
+                    <a class="nav-item nav-link" href="contact.html">Contact</a>
+                </div>
+            </div>
+        </nav>
+
+        <h1 style="text-align: center; font-family: 'Broadway'; margin: 60px;">Skyline Blog Posts</h1>
+
+        <div class="blog-first-row row " style="margin: auto; background-color: black;">
+
+            <div class="col-xs-12 col-sm-12 col-md-7 col-lg-7" style="padding: 0;">
+                <a href="#"><img src="images/healthy-blog.jpeg" alt="A bowl full of healthy fruits">
+                    <h2 class="h2-position1">Diet & Exercise Go Hand-in-Hand</h2>
+                </a>
+            </div>
+
+            <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5" style="padding: 0;">
+                <a href="#"><img src="images/pushup.jpg" alt="A man doing a pushup">
+                    <h2 class="h2-position2">Habits in the Gym to Take Home with You</h2>
+                </a>
+            </div>
+
+        </div>
+
+        <div class="blog-second-row row" style="background-color: black;">
+            <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5" style="padding: 0;">
+                <a href="#"><img src="images/running.jpg" alt="Supplies you would want to have for a good workout">
+                    <h2 class="h2-position3">Essentials Supplies for Best Workout</h2>
+                </a>
+            </div>
+
+            <div class="col-xs-12 col-sm-12 col-md-7 col-lg-7" style="padding: 0;">
+                <a href="#"><img src="images/meal-prep.jpg" alt="Meal prepping">
+                    <h2 class="h2-position4">Meal Prep & Maximum Results</h2>
+                </a>
+            </div>
+        </div>
+
+        <div class="pagination-container">
+
+            <h3 style="margin-top: 15px; text-align: center;">View More Blog Posts</h3>
+
+            <div class="pagination">
+                <a href="#">&laquo;</a>
+                <a href="#" class="active">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <a href="#">&raquo;</a>
+            </div>
+
+        </div>
+
+        <footer class="page-footer font-small mdb-color lighten-3 pt-4">
+
+            <!-- Footer Links -->
+            <div class="container text-center text-md-left">
+          
+              <!-- Grid row -->
+              <div class="row">
+          
+                <hr class="clearfix w-100 d-md-none">
+          
+                <!-- Grid column -->
+                <div class="col-md-2 col-lg-2 mx-auto my-md-4 my-0 mt-4 mb-1">
+          
+                  <!-- Links -->
+                  <h5 class="font-weight-bold text-uppercase mb-4">Navigation</h5>
+          
+                  <ul class="list-unstyled">
+                    <li>
+                      <p>
+                        <a href="index.html">HOME</a>
+                      </p>
+                    </li>
+                    <li>
+                      <p>
+                        <a href="about.html">ABOUT US</a>
+                      </p>
+                    </li>
+                    <li>
+                      <p>
+                        <a href="programs.html">PROGRAMS</a>
+                      </p>
+                    </li>
+                    <li>
+                      <p>
+                        <a href="blog.html">BLOG</a>
+                      </p>
+                    </li>
+                    <li>
+                      <p>
+                        <a href="contact.html">CONTACT</a>
+                      </p>
+                    </li>
+                  </ul>
+          
+                </div>
+                <!-- Grid column -->
+          
+                <hr class="clearfix w-100 d-md-none">
+          
+                <!-- Grid column -->
+                <div class="col-md-4 col-lg-3 mx-auto my-md-4 my-0 mt-4 mb-1">
+          
+                  <!-- Contact details -->
+                  <h5 class="font-weight-bold text-uppercase mb-4">Contact</h5>
+          
+                  <ul class="list-unstyled">
+                    <li>
+                      <p>
+                        <i class="fas fa-home mr-3"></i>242 W 41st St, New York, NY 10036</p>
+                    </li>
+                    <li>
+                      <p>
+                        <i class="fas fa-envelope mr-3"></i>skylinefit@mail.com</p>
+                    </li>
+                    <li>
+                      <p>
+                        <i class="fas fa-phone mr-3"></i>212-123-4567</p>
+                    </li>
+                  </ul>
+          
+                </div>
+                <!-- Grid column -->
+          
+                <hr class="clearfix w-100 d-md-none">
+          
+                <!-- Grid column -->
+                <div style="font-size: 2.5em;" class="col-md-2 col-lg-2 text-center mx-auto my-4">
+          
+                  <!-- Social buttons -->
+                  <h5 class="font-weight-bold text-uppercase mb-4">Follow Us</h5>
+          
+                  <!-- Facebook -->
+                  <a type="button" class="btn-floating btn-fb">
+                    <i style="margin-right: 10px;" class="fab fa-facebook-f"></i>
+                  </a>
+                  <!-- Twitter -->
+                  <a type="button" class="btn-floating btn-tw">
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                  <!-- Google +-->
+                  <a type="button" class="btn-floating btn-gplus">
+                    <i class="fab fa-google-plus-g"></i>
+                  </a>
+          
+                </div>
+                <!-- Grid column -->
+          
+              </div>
+              <!-- Grid row -->
+          
+            </div>
+            <!-- Footer Links -->
+          </footer>
+          <!-- Footer -->
+
+    </div><!--CLOSING MAIN CONTAINER-->
+
+            
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>
+        

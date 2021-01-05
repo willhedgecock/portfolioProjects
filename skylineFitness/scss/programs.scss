@@ -1,0 +1,70 @@
+//PROGRAM STYLING
+
+$orange: #F19c33;
+$dark-blue: #162C40;
+
+.program {
+    background-color: $dark-blue;
+    padding: 30px;
+    text-align: center;
+    
+    p {
+        font-size: 1.25em;
+        width: 70%;
+        margin: auto;
+        color: #f3f3f3;
+        padding: 10px;
+    }
+
+    img {
+        border: 2px solid black;
+    }
+}
+
+.first-classes {
+    text-align: center;
+    margin-top: 30px;
+
+    h3 {
+        font-family: 'Broadway';
+    }
+
+    img {
+        height: 360px;
+        width: 65%;
+        border: 2px solid black;
+        border-bottom: 0;
+    }
+
+    p {
+        width: 65%;
+        font-size: 1.2em;
+        margin: auto;
+        background-color: $orange;
+        border: 2px solid black;
+    }
+}
+
+.second-classes {
+    text-align: center;
+    margin: 50px auto 50px auto;
+
+    h3 {
+        font-family: 'Broadway';
+    }
+
+    img {
+        height: 360px;
+        width: 65%;
+        border: 2px solid black;
+        border-bottom: 0;
+    }
+
+    p {
+        width: 65%;
+        font-size: 1.2em;
+        margin: auto;
+        background-color: $orange;
+        border: 2px solid black;
+    }
+}

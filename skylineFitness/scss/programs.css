@@ -1,0 +1,66 @@
+.program {
+  background-color: #162C40;
+  padding: 30px;
+  text-align: center;
+}
+
+.program p {
+  font-size: 1.25em;
+  width: 70%;
+  margin: auto;
+  color: #f3f3f3;
+  padding: 10px;
+}
+
+.program img {
+  border: 2px solid black;
+}
+
+.first-classes {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.first-classes h3 {
+  font-family: 'Broadway';
+}
+
+.first-classes img {
+  height: 360px;
+  width: 65%;
+  border: 2px solid black;
+  border-bottom: 0;
+}
+
+.first-classes p {
+  width: 65%;
+  font-size: 1.2em;
+  margin: auto;
+  background-color: #F19c33;
+  border: 2px solid black;
+}
+
+.second-classes {
+  text-align: center;
+  margin: 50px auto 50px auto;
+}
+
+.second-classes h3 {
+  font-family: 'Broadway';
+}
+
+.second-classes img {
+  height: 360px;
+  width: 65%;
+  border: 2px solid black;
+  border-bottom: 0;
+}
+
+.second-classes p {
+  width: 65%;
+  font-size: 1.2em;
+  margin: auto;
+  background-color: #F19c33;
+  border: 2px solid black;
+}
+/*# sourceMappingURL=programs.css.map */

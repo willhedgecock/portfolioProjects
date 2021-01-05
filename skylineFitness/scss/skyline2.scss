@@ -1,0 +1,128 @@
+$orange: #F19c33;
+$dark-blue: #162C40;
+
+body {
+    background-color: #F3F3F3;
+    font-family: Georgia;
+    animation: page-load 0.5s ease-in;
+}
+
+.pagination {
+    display: inline-block;
+    margin: 10px;
+  }
+
+  .pagination-container {
+      text-align: center;
+  }
+
+  .pagination a:hover:not(.active) {
+      background-color: #ddd;
+    }
+  
+  .pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+    border: 1px solid #ddd;
+  }
+  
+  .pagination a.active {
+    background-color: $orange;
+    color: white;
+    border: 1px solid #ddd;
+    opacity: 0.8;
+  }
+
+.no-padding {
+    background-color:#162C40; 
+}
+
+footer {
+    border-top: 2px solid black;
+    background-color: #111111;
+    color: #f3f3f3;
+}
+
+footer a {
+    color: #F3f3f3;
+}
+
+footer a:hover {
+    color: #ff750c;
+}
+
+//BLOG STYLING
+
+.blog-first-row img {
+    height: 487px;
+    width: 100%;
+    opacity: .25;
+}
+
+.blog-first-row > div:hover {
+    background: rgb(0,0,0);
+background: linear-gradient(45deg, rgba(0,0,0,1) 0%, rgba(22,44,64,1) 10%, rgba(255,117,12,1) 100%);
+}
+
+.blog-second-row > div:hover {
+    background: rgb(0,0,0);
+background: linear-gradient(45deg, rgba(0,0,0,1) 0%, rgba(22,44,64,1) 10%, rgba(255,117,12,1) 100%);
+}
+
+
+.blog-second-row img {
+    height: 487px;
+    width: 100%;
+    opacity: .25;
+}
+
+.blog-first-row .h2-position1 {
+    position: absolute;
+    top: 40%;
+    left: 25%;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}
+
+.blog-first-row .h2-position2 {
+    position: absolute;
+    top: 40%;
+    left: 8%;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}
+
+.blog-second-row .h2-position3 {
+    position: absolute;
+    top: 40%;
+    left: 8%;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}
+
+.blog-second-row .h2-position4 {
+    position: absolute;
+    top: 40%;
+    left: 30%;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}
+//END OF BLOG STYLING
+
+@keyframes page-load {
+    from {
+        opacity: 0;
+        transform: translateY(-2px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
