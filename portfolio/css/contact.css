@@ -75,3 +75,95 @@ form textarea {
 .required {
   color: red;
 }
+
+body {
+  background-color: #f7f7f7;
+  height: 100%;
+  overflow: hidden;
+}
+
+#contact {
+  position: relative;
+}
+
+#footer {
+  background-color: #202020;
+  color: white;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.msgClassFail {
+  padding: 15px;
+  background-color: #EC2323;
+  width: 100%;
+  text-align: center;
+  font-size: 1.2em;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.msgClassPass {
+  padding: 15px;
+  background-color: limegreen;
+  width: 100%;
+  text-align: center;
+  font-size: 1.2em;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@media screen and (max-width: 480px) {
+  .sticky {
+    position: relative;
+  }
+  body {
+    overflow: visible;
+  }
+  form {
+    min-width: 95%;
+  }
+  #footer {
+    position: relative;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 768px) {
+  .sticky {
+    position: relative;
+  }
+  .fa-github {
+    color: white;
+  }
+  body {
+    overflow: visible;
+  }
+  form {
+    min-width: 95%;
+  }
+  #footer {
+    position: relative;
+  }
+  #footer .fa-github {
+    color: white;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1023px) {
+  .sticky {
+    position: relative;
+  }
+  .fa-github {
+    color: white;
+  }
+  body {
+    overflow: visible;
+  }
+  form {
+    min-width: 95%;
+  }
+  #footer {
+    position: relative;
+  }
+}

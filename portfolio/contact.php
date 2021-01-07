@@ -68,43 +68,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@100&display=swap" rel="stylesheet">
 
     <style>
-        body {
-            background-color: #f7f7f7;
-            height: 100%;
-            overflow: hidden;
-        }
-
-        #contact {
-            position: relative;
-        }
-
-        #footer {
-            background-color: #202020;
-            color: white;
-            position: absolute;
-            bottom: 0;
-            width: 100%;
-        }
-
-        .msgClassFail {
-            padding: 15px;
-            background-color: #EC2323;
-            width: 100%;
-            text-align: center;
-            font-size: 1.2em;
-            font-weight: bold;
-            font-family: Arial, Helvetica, sans-serif;
-        }
-
-        .msgClassPass {
-            padding: 15px;
-            background-color: limegreen;
-            width: 100%;
-            text-align: center;
-            font-size: 1.2em;
-            font-weight: bold;
-            font-family: Arial, Helvetica, sans-serif;
-        }
+        
     </style>
 </head>
 
@@ -191,6 +155,8 @@
         </div>
 
     </footer>
+
+    <script src="js/portfolio.js"></script>
     
 </body>
 
