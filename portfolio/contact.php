@@ -13,6 +13,10 @@
 
             if(!empty($name) && !empty($email) && !empty($message)) {
 
+                    if ($_POST['phone-number'] != "1") {
+                        die("Form could be not be submitted");
+                    }
+
                     if(filter_var($email, FILTER_VALIDATE_EMAIL) === false) {
                         //email failed
                         $msg = "Please enter a valid email";
