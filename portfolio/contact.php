@@ -92,6 +92,7 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="index.html#about">About Me</a></li>
                 <li><a href="index.html#portfolio">Portfolio</a></li>
+                <li class="nav-item" ><a href="WDV495/wdv495homework.html">WDV495</a></li>
                 <li><a href="contact.php">Contact Me</a></li>
             </ul>
         </div>
