@@ -37,6 +37,15 @@
   grid-row: span 2;
 }
 
+.project7 {
+  grid-column: span 3;
+}
+
+.project7 a {
+  display: block;
+  margin-top: 20px;
+}
+
 .pic-overlay {
   opacity: 0;
   transition-property: opacity;
