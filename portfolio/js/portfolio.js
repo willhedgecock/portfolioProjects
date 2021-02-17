@@ -17,6 +17,19 @@ for (let x = 0; x < listNodes.length; x++) {
     })
 }
 
+//ADD ONCLICK FOR SAFARI ON SMALLER DEVICES
+
+let picOverlay = document.getElementsByClassName('pic-overlay');
+
+function addProjectDescMobile() {
+    if (screen.width < 1000) {
+        for (let y = 0; y < picOverlay.length; y++) {
+            picOverlay[y].addEventListener('click', function() {
+                document.querySelectorAll('.pic-overlay').style.opacity = 1;
+            })
+        }
+    }
+}
 
 //STICKY NAVBAR
 window.onscroll = () => {stickyNav()};

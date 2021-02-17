@@ -1,6 +1,6 @@
 //make navbar responsive
 
-@media (max-width: 500px) {
+@media (max-width: 550px) {
     .toggle-button {
         display: flex;
         align-items: center;
@@ -50,6 +50,10 @@
         text-align: center;
     }
 
+    .project {
+        min-width: 95vw;
+    }
+
     .about-flex {
         text-align: center;
 
@@ -113,30 +117,13 @@
         }
     }
 
-    .grid-portfolio {
-        min-width: 90%;
-        grid-template-columns: 1fr;
-
-        .project1 {
-            grid-row: span 1;
-        }
-
-        .project3 {
-            grid-row: span 1;
-        }
-
-        .project4 {
-            grid-row: span 1;
-        }
-    }
-
     footer {
         text-align: center;
         font-weight: bold;
     }
 
     .pic-overlay .project-desc {
-        font-size: 0.9em;
+        font-size: 0.75em;
     }
 
 }
@@ -149,6 +136,14 @@
         height: 100vh;
         opacity: 0.4;
         position: relative;
+    }
+
+    .flex-portfolio {
+        min-width: 90vw;
+
+        .project {
+            min-width: 45%;
+        }
     }
     
     .video-text {
@@ -218,27 +213,6 @@
             .fa-git {
                 font-size: 110px;
             }
-        }
-    }
-    
-    .grid-portfolio {
-        max-width: 60%;
-        grid-template-columns: 1fr;
-
-        .grid-project {
-            min-width: 100%;
-        }
-
-        .project1 {
-            grid-row: span 1;
-        }
-
-        .project3 {
-            grid-row: span 1;
-        }
-
-        .project4 {
-            grid-row: span 1;
         }
     }
 
@@ -306,28 +280,6 @@
         }
     }
 
-
-    .grid-portfolio {
-        min-width: 75%;
-        grid-template-columns: 1fr 1fr;
-
-        .grid-project {
-            min-width: 100%;
-        }
-
-        .project1 {
-            grid-row: span 1;
-        }
-
-        .project3 {
-            grid-row: span 1;
-        }
-
-        .project4 {
-            grid-row: span 1;
-        }
-    }
-
     footer {
         text-align: center;
         font-weight: bold;
@@ -341,27 +293,6 @@
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1370px) {
-
-    .grid-portfolio {
-        min-width: 75%;
-        grid-template-columns: 1fr 1fr;
-
-        .grid-project {
-            min-width: 100%;
-        }
-
-        .project1 {
-            grid-row: span 1;
-        }
-
-        .project3 {
-            grid-row: span 1;
-        }
-
-        .project4 {
-            grid-row: span 1;
-        }
-    }
 
     footer {
         text-align: center;
