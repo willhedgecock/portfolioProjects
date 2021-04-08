@@ -47,6 +47,9 @@
     min-width: 100%;
     text-align: center;
   }
+  .about-right {
+    min-width: 100%;
+  }
   .about-right img {
     min-height: 300px;
   }
